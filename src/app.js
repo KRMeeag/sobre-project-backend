@@ -13,7 +13,7 @@ const app = express();
 app.use(morgan('dev'));
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL || "http://localhost:5173" || "https://hoppscotch.io",
+  origin: process.env.FRONTEND_URL || "https://hoppscotch.io",
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   credentials: true
 }));
